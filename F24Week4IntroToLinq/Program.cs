@@ -45,7 +45,21 @@
             // deferred execution
             foreach (var i in startsWithR)
                 Console.WriteLine(i);
-            Console.WriteLine("\n\n");
+            Console.WriteLine("\n\n\n\n");
+
+
+
+            List<Employee> employees = new List<Employee>()
+            {
+                new Employee("John", "Green", 4000),
+                new Employee("James", "Indigo", 5000),
+                new Employee("Anne", "Indigo", 7000),
+                new Employee("Walter", "White", 6000),
+                new Employee("John", "Brown", 5500),
+                new Employee("Katy", "Green", 3000)
+            };
+
+
         }
     }
 }
