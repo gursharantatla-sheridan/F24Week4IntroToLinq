@@ -1,4 +1,6 @@
-﻿namespace F24Week4IntroToLinq
+﻿using ConsoleTables;
+
+namespace F24Week4IntroToLinq
 {
     internal class Program
     {
@@ -58,6 +60,16 @@
                 new Employee("John", "Brown", 5500),
                 new Employee("Katy", "Green", 3000)
             };
+
+            // ConsoleTables example
+            var table = new ConsoleTable("First name", "Last name", "Salary");
+
+            foreach (var emp in employees)
+                table.AddRow(emp.FirstName, emp.LastName, emp.Salary);
+
+            table.Write(Format.MarkDown);
+            Console.WriteLine("\n\n");
+
 
             var allEmps = from e in employees
                           select e;
